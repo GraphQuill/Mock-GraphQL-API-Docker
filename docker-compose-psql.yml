@@ -1,0 +1,25 @@
+version: '3'
+services:
+  server:
+    image: 'graphquill/gql-server'
+    container_name: 'gql-server'
+    ports:
+    - '3000:3000'
+    volumes:
+    - .:/usr/src/app
+    - node_modules:/usr/src/app/node_modules
+    command: npm start
+    depends_on:
+    - graphquill-postgres-db
+  graphquill-postgres-db:
+    image: 'graphquill/psql-ecommerce'
+    container_name: 'graphquill-postgres-db'
+    environment:
+    - POSTGRES_PASSWORD=graphquill
+    - POSTGRES_USER=graphquill
+    - POSTGRES_DB=graphquill
+    volumes:
+    - postgres-db-volume:/var/lib/postgresql/data
+volumes:
+  node_modules:
+  postgres-db-volume:
