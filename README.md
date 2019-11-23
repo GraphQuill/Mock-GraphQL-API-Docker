@@ -6,6 +6,7 @@
 This GraphQL API was created and used for testing during the development of [GraphQuill](https://github.com/oslabs-beta/GraphQuill). GraphQuill is a real-time GraphQL API exploration extension for VSCode.
 
 In an effort to allow other engineers to test out GraphQuill on a mock GraphQL API, we've open-sourced this repo. This project uses a docker instance of **PostgreSQL**.
+
 There is also a locally hosted version that uses PostgreSQL and MongoDB [here](https://github.com/GraphQuill/Mock-GraphQL-API-Local).
 
 ---
