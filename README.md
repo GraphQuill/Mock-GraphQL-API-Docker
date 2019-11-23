@@ -29,6 +29,14 @@ After setting up the docker images, run the docker-compose script to spin up the
 npm run docker-compose
 ```
 
+To stop the docker containers, either press `Ctrl + C` in the terminal or run this script in a separate terminal: 
+
+```javascript
+npm run docker-stop
+```
+
+
+
 Your GraphQL API has been setup now and seeded with data from [faker](https://www.npmjs.com/package/faker). Now you can use the [GraphQuill](https://github.com/oslabs-beta/GraphQuill) extension to view the API's schema, send queries or mutations and receive responses, all within VS Code 😀
 
 ---

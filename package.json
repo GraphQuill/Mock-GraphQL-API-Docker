@@ -10,7 +10,8 @@
     "resetMongo": "node database/mongo/resetMongoDB.js && node database/mongo/seedMongoDB.js",
     "resetDbs": "npm run resetPsql && npm run resetMongo",
     "docker-build": "docker build -t graphquill/psql-ecommerce -f Dockerfile-postgres . && docker build -t graphquill/gql-server .",
-    "docker-compose": "docker-compose -f docker-compose-psql.yml up"
+    "docker-compose": "docker-compose -f docker-compose-psql.yml up",
+    "docker-stop": "docker-compose -f docker-compose-psql.yml down"
   },
   "repository": {
     "type": "git",
